@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Health It</string>
+   <!-- Agora -->
+    <string name="agora_app_id">4e56bfb0604d4d34a4e23b17c96a7ab0</string>
+    <string name="agora_access_token">007eJxTYJh+uDJ0zc/PT5w9BS4eOf6jwNJrbXU0Z0mj+jfupvjzvYsUGExSTc2S0pIMzAxMUkxSjE0STVKNjJMMzZMtzRLNE5MM6o+vTG4IZGRw2drKxMgAgSA+D0NKam6+c0ZiXl5qjiEDAwADeyRG</string>
+
+    <string name="mm_yy">MM/YY</string>
+    <string name="just_now">just now</string>
+    <string name="a_minute_ago">a minute ago</string>
+    <string name="minutes_ago">minutes ago</string>
+    <string name="an_hour_ago">an hour ago</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="yesterday">yesterday</string>
+    <string name="days_ago">days ago</string>
+    <string name="month_ago">month ago</string>
+    <string name="year_ago">year ago</string>
+    <string name="e_health_checkup">E HEALTH\nCHECKUP</string>
+    <string name="be_fit_grow_fit">BE FIT GROW FIT</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="the_art_of_medicine_consists_of_amusing_the_patient_while_nature_cures_the_disease">\'The art of medicine consists of amusing the patient while nature cures the disease\'</string>
+    <string name="patient_login">Patient Login</string>
+    <string name="doctor_login">Doctor Login</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_password">Enter password</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_sign_up_login">Already a user? Login</string>
+    <string name="already_login_signup">New to Health It? Signup</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="enter_a_valid_email">Enter a valid email</string>
+    <string name="enter_a_valid_password">Enter a valid password</string>
+    <string name="password_mismatch">Password mismatch</string>
+    <string name="name_at_least_two_character">Name should at least 2 character</string>
+    <string name="logout">Logout</string>
+    <string name="home">Home</string>
+    <string name="doctors">Doctors</string>
+    <string name="no_result_found">No result found.</string>
+    <string name="appointments">Appointments</string>
+    <string name="profile">Profile</string>
+    <string name="welcome">WELCOME</string>
+    <string name="welcome_doctor">Welcome back,\nDr. %1$s</string>
+    <string name="_24x7_hours_service">24X7 Hours Service</string>
+    <string name="search">Search</string>
+    <string name="know_your_doctor">Know Your\nDoctor</string>
+    <string name="choose_your_category">Choose your category</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="phone_number">Phone number</string>
+    <string name="about_doctor">About Doctor</string>
+    <string name="about_patient">About Patient</string>
+    <string name="working_time">Working Time</string>
+    <string name="working_time_value">Mon - Fri, 09:00 AM - 20:00 PM</string>
+    <string name="make_appointment">Make Appointment</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="choose_the_hours">Choose the Hour</string>
+    <string name="fee_information">Fee Information</string>
+    <string name="book_now">Book Now</string>
+    <string name="write_your_problem">Write Your Problem *</string>
+    <string name="tell_doctor_about_your_problem">Tell doctor about your problem</string>
+    <string name="morning">Morning</string>
+    <string name="evening">Evening</string>
+    <string name="please_select_time_slot">Please select time slot</string>
+    <string name="describe_your_problem">Please describe your problem</string>
+    <string name="done">Done</string>
+    <string name="your_appointment_booking_request_sent_successfully">Your appointment booking request sent successfully.</string>
+    <string name="request_sent">Request Sent</string>
+    <string name="status">Status - %1$s</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="active">Active</string>
+    <string name="past">Past</string>
+    <string name="my_appointments">My Appointments</string>
+    <string name="no_appointment">You don\'t have an appointment</string>
+    <string name="no_appointment_request">No appointment request yet.</string>
+    <string name="appointment_requests">Appointment Requests</string>
+    <string name="quick_access">Quick Access</string>
+    <string name="requests">Appointment\nRequests</string>
+    <string name="upcoming_appointments">Upcoming Appointments</string>
+    <string name="see_all">See all</string>
+    <string name="video_call">Video Call</string>
+    <string name="patients">Patients</string>
+    <string name="address">Address</string>
+    <string name="speciality">Speciality</string>
+    <string name="problem">Patient Problem</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+    <string name="appointment_date">Appointment Date</string>
+    <string name="appointment_time">Appointment Time</string>
+    <string name="mark_paid">Mark Paid</string>
+    <string name="mark_as_paid">Mark As Paid</string>
+    <string name="mark_as_paid_desc">Are you sure you want to mark as payment done for this appointment?.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="success">Payment Successfully</string>
+    <string name="appointment_request">Appointment Request</string>
+
+    <string-array name="doctorSpecialityList">
+        <item>Dermatologist</item>
+        <item>Dentist</item>
+        <item>Pediatrician</item>
+        <item>Neurologist</item>
+        <item>Psychiatrist</item>
+    </string-array>
+</resources>

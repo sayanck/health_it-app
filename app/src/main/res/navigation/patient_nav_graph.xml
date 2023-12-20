@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/patient_nav_graph"
+    app:startDestination="@id/patientHomeFragment">
+
+    <fragment
+        android:id="@+id/patientHomeFragment"
+        android:name="com.healthit.application.ui.patient.dashboard.home.PatientHomeFragment"
+        android:label="Patient Home"
+        tools:layout="@layout/fragment_patient_home" />
+
+
+    <fragment
+        android:id="@+id/myDoctorsFragment"
+        android:name="com.healthit.application.ui.patient.dashboard.myDoctors.MyDoctorsFragment"
+        android:label="My Doctors"
+        tools:layout="@layout/fragment_my_doctors" />
+
+
+    <fragment
+        android:id="@+id/patientAppointmentFragment"
+        android:name="com.healthit.application.ui.appointment.fragments.MyAppointmentFragment"
+        android:label="Patient Appointment"
+        tools:layout="@layout/fragment_patient_appointment" />
+
+    <fragment
+        android:id="@+id/patientProfileFragment"
+        android:name="com.healthit.application.ui.profile.PatientProfileFragment"
+        android:label="Patient Profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

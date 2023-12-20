@@ -1,0 +1,154 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'com.google.dagger.hilt.android'
+    id 'com.google.firebase.crashlytics'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'androidx.navigation.safeargs'
+}
+
+
+android {
+    namespace 'com.healthit.application'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.healthit.application"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0_beta1"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "SERVER_IP", project.properties['SERVER_IP']
+        buildConfigField "String", "FIREBASE_KEY", project.properties['FIREBASE_KEY']
+        buildConfigField "String", "FIREBASE_SERVER_IP", project.properties['FIREBASE_SERVER_IP']
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+}
+
+def lifeCycleVersion = "2.5.1"
+def roomVersion = "2.4.3"
+def dataStoreVersion = "1.1.0-dev01"
+def workRuntimeVersion = "2.7.1"
+def retrofitVersion = "2.9.0"
+def okHttpVersion = "4.9.2"
+def glideVersion = "4.13.2"
+def navigationComponentVersion = "2.5.3"
+def hiltVersion = "2.44"
+def dimensionsVersion = "1.1.0"
+def coroutineVersion = "1.6.4"
+
+dependencies {
+    // Jetpack
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //View model and live data
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifeCycleVersion"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifeCycleVersion"
+
+    //Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutineVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutineVersion")
+    implementation("com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2")
+
+    //Coroutine Lifecycle Scopes
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifeCycleVersion"
+
+    //Room
+    implementation "androidx.room:room-runtime:$roomVersion"
+    kapt("androidx.room:room-compiler:$roomVersion")
+    //Kotlin Extensions and Coroutines support for Room
+    implementation("androidx.room:room-ktx:$roomVersion")
+
+    implementation "androidx.datastore:datastore:$dataStoreVersion"
+    implementation "androidx.datastore:datastore-preferences:$dataStoreVersion"
+//    implementation " androidx.work:work-runtime:$workRuntimeVersion"
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.okhttp3:okhttp:$okHttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
+    //Gson
+    implementation("com.google.code.gson:gson:2.9.1")
+
+
+    //Glide
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    kapt("com.github.bumptech.glide:compiler:$glideVersion")
+
+    //Navigation Components
+    implementation("androidx.navigation:navigation-fragment-ktx:$navigationComponentVersion")
+    implementation("androidx.navigation:navigation-ui-ktx:$navigationComponentVersion")
+
+    //Activity KTX For viewModels()
+    implementation("androidx.activity:activity-ktx:1.6.1")
+    implementation("androidx.fragment:fragment-ktx:1.5.4")
+
+    //Dagger - Hilt
+    implementation "com.google.dagger:hilt-android:$hiltVersion"
+    kapt "com.google.dagger:hilt-compiler:$hiltVersion"
+
+    //Dimensions
+    implementation("com.intuit.sdp:sdp-android:$dimensionsVersion")
+    implementation("com.intuit.ssp:ssp-android:$dimensionsVersion")
+
+    //Firebase
+    implementation platform('com.google.firebase:firebase-bom:31.0.2')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+    implementation 'com.google.firebase:firebase-messaging:23.1.1'
+
+
+    //For Service
+    implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
+
+    // Lottie Animation
+    implementation ("com.airbnb.android:lottie:5.2.0")
+
+    //Segment control
+    implementation 'com.github.addisonelliott:SegmentedButton:3.1.9'
+
+    //Swipe to refresh
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+
+    //Agora Sdk
+    implementation 'io.agora.rtc:full-sdk:2.4.1'
+
+
+}
+
+// Allow references to generated code
+kapt {
+    correctErrorTypes = true
+}

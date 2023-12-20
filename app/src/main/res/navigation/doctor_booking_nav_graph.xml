@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/doctor_booking_nav_graph"
+    app:startDestination="@id/doctorDetailsFragment">
+
+    <fragment
+        android:id="@+id/doctorDetailsFragment"
+        android:name="com.healthit.application.ui.patient.doctorDetail.fragments.DoctorDetailsFragment"
+        android:label="Doctor Details"
+        tools:layout="@layout/fragment_doctor_details" />
+
+    <fragment
+        android:id="@+id/doctorBookingFragment"
+        android:name="com.healthit.application.ui.patient.doctorDetail.fragments.DoctorBookingFragment"
+        android:label="Doctor Booking"
+        tools:layout="@layout/fragment_doctor_booking" />
+
+</navigation>

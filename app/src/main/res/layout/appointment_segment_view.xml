@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/segmentFL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_12sdp"
+    android:background="@drawable/round_corner_dark_blue_bg"
+    android:backgroundTint="@color/light_white"
+    app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+    app:layout_constraintStart_toStartOf="@id/guidelineStart"
+    app:layout_constraintTop_toBottomOf="@+id/appBar">
+
+    <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+        android:id="@+id/segmentGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/_4sdp"
+        android:background="@color/white"
+        android:gravity="center"
+        app:position="0"
+        app:radius="@dimen/_10sdp"
+        app:ripple="false"
+        app:selectedBackground="@color/dark_blue"
+        app:selectionAnimationInterpolator="none">
+
+        <com.addisonelliott.segmentedbutton.SegmentedButton
+            android:id="@+id/upComingBt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/light_white"
+            android:fontFamily="@font/open_sans_regular"
+            android:paddingVertical="@dimen/_10sdp"
+            app:rounded="true"
+            app:selectedTextColor="@color/white"
+            app:text="@string/upcoming"
+            app:textColor="@color/dark_blue" />
+
+        <com.addisonelliott.segmentedbutton.SegmentedButton
+            android:id="@+id/activeBt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/light_white"
+            android:fontFamily="@font/open_sans_regular"
+            android:paddingVertical="@dimen/_10sdp"
+            app:rounded="true"
+            app:selectedTextColor="@color/white"
+            app:text="@string/active"
+            app:textColor="@color/dark_blue" />
+
+        <com.addisonelliott.segmentedbutton.SegmentedButton
+            android:id="@+id/pastBt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/light_white"
+            android:fontFamily="@font/open_sans_regular"
+            android:paddingVertical="@dimen/_10sdp"
+            app:rounded="true"
+            app:selectedTextColor="@color/white"
+            app:text="@string/past"
+            app:textColor="@color/dark_blue" />
+    </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+
+</FrameLayout>
+
